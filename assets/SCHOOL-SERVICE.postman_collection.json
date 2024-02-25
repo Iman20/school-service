@@ -1,0 +1,824 @@
+{
+	"info": {
+		"_postman_id": "3f47b407-d66b-4940-a614-6363a490b725",
+		"name": "SCHOOL-SERVICE",
+		"description": "Documentation for service school and attendance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2900739"
+	},
+	"item": [
+		{
+			"name": "SCHOOL-API",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"School A\",\n    \"status\":\"A\",\n    \"createdBy\": \"SYSTEM\",\n    \"createdDate\": \"2024-02-24 11:33:34\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/school",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"school"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Insert",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"School A\",\n    \"status\":\"A\",\n    \"createdBy\": \"SYSTEM\",\n    \"createdDate\": \"2024-02-24 11:33:34\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/school",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"school"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Feb 2024 23:59:17 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"682c94bf-a2ec-45ca-834a-7f89a3c425a0\",\n        \"createdBy\": \"SYSTEM\",\n        \"lastModifiedBy\": null,\n        \"createdDate\": \"2024-02-24 11:33:34\",\n        \"lastModifiedDate\": null,\n        \"name\": \"School A\",\n        \"status\": \"A\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/school",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"school"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Find All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/school",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"school"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Feb 2024 23:56:00 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"9c02cb7e-54fe-4bd1-8543-ae6a1c2683c5\",\n            \"createdBy\": \"SYSTEM\",\n            \"lastModifiedBy\": null,\n            \"createdDate\": \"2024-02-24 11:33:34\",\n            \"lastModifiedDate\": null,\n            \"name\": \"School A\",\n            \"status\": \"A\"\n        },\n        {\n            \"id\": \"58244b00-5119-43e5-971e-6438da9e798a\",\n            \"createdBy\": \"SYSTEM\",\n            \"lastModifiedBy\": null,\n            \"createdDate\": \"2024-02-24 11:33:34\",\n            \"lastModifiedDate\": null,\n            \"name\": \"School A\",\n            \"status\": \"A\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Find By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/school/8f925b60-792c-4198-8fff-1989c1bdc7961",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"school",
+								"8f925b60-792c-4198-8fff-1989c1bdc7961"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Find By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/school/8f925b60-792c-4198-8fff-1989c1bdc7961",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"school",
+										"8f925b60-792c-4198-8fff-1989c1bdc7961"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Feb 2024 23:56:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 404,\n    \"message\": \"School is not found\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CLASSROOM-API",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Classroom A\",\n    \"status\":\"A\",\n    \"createdBy\": \"SYSTEM\",\n    \"createdDate\": \"2024-02-24 11:33:34\",\n    \"schoolId\": \"682c94bf-a2ec-45ca-834a-7f89a3c425a0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/school/classroom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"school",
+								"classroom"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Insert",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Classroom A\",\n    \"status\":\"A\",\n    \"createdBy\": \"SYSTEM\",\n    \"createdDate\": \"2024-02-24 11:33:34\",\n    \"schoolId\": \"682c94bf-a2ec-45ca-834a-7f89a3c425a0\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/school/classroom",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"school",
+										"classroom"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Feb 2024 23:59:27 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\",\n        \"createdBy\": \"SYSTEM\",\n        \"lastModifiedBy\": null,\n        \"createdDate\": \"2024-02-24 11:33:34\",\n        \"lastModifiedDate\": null,\n        \"name\": \"Classroom A\",\n        \"status\": \"A\",\n        \"schoolId\": \"682c94bf-a2ec-45ca-834a-7f89a3c425a0\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/school/classroom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"school",
+								"classroom"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Find All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/school/classroom",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"school",
+										"classroom"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Feb 2024 00:00:56 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\",\n            \"createdBy\": \"SYSTEM\",\n            \"lastModifiedBy\": null,\n            \"createdDate\": \"2024-02-24 11:33:34\",\n            \"lastModifiedDate\": null,\n            \"name\": \"Classroom A\",\n            \"status\": \"A\",\n            \"schoolId\": \"682c94bf-a2ec-45ca-834a-7f89a3c425a0\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Find By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/school/classroom/31b2b389-16fe-46f5-928d-62f50f3a0a13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"school",
+								"classroom",
+								"31b2b389-16fe-46f5-928d-62f50f3a0a13"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Find By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/school/classroom/31b2b389-16fe-46f5-928d-62f50f3a0a13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"school",
+										"classroom",
+										"31b2b389-16fe-46f5-928d-62f50f3a0a13"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Feb 2024 00:01:04 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\",\n        \"createdBy\": \"SYSTEM\",\n        \"lastModifiedBy\": null,\n        \"createdDate\": \"2024-02-24 11:33:34\",\n        \"lastModifiedDate\": null,\n        \"name\": \"Classroom A\",\n        \"status\": \"A\",\n        \"schoolId\": \"682c94bf-a2ec-45ca-834a-7f89a3c425a0\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "STUDENT-API",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Student A\",\n    \"status\":\"A\",\n    \"createdBy\": \"SYSTEM\",\n    \"createdDate\": \"2024-02-24 11:33:34\",\n    \"classroomId\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/school/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"school",
+								"student"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Insert",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Student A\",\n    \"status\":\"A\",\n    \"createdBy\": \"SYSTEM\",\n    \"createdDate\": \"2024-02-24 11:33:34\",\n    \"classroomId\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/school/student",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"school",
+										"student"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Feb 2024 00:00:47 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"343420bd-837f-4d04-a7a8-650c5af80940\",\n        \"createdBy\": \"SYSTEM\",\n        \"lastModifiedBy\": null,\n        \"createdDate\": \"2024-02-24 11:33:34\",\n        \"lastModifiedDate\": null,\n        \"name\": \"Student A\",\n        \"status\": \"A\",\n        \"classroomId\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/school/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"school",
+								"student"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Find All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/school/student",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"school",
+										"student"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Feb 2024 00:01:26 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"24e4aba6-ef57-4c10-ba67-f01148941e0f\",\n            \"createdBy\": \"SYSTEM\",\n            \"lastModifiedBy\": null,\n            \"createdDate\": \"2024-02-24 11:33:34\",\n            \"lastModifiedDate\": null,\n            \"name\": \"Student A\",\n            \"status\": \"A\",\n            \"classroomId\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\"\n        },\n        {\n            \"id\": \"343420bd-837f-4d04-a7a8-650c5af80940\",\n            \"createdBy\": \"SYSTEM\",\n            \"lastModifiedBy\": null,\n            \"createdDate\": \"2024-02-24 11:33:34\",\n            \"lastModifiedDate\": null,\n            \"name\": \"Student A\",\n            \"status\": \"A\",\n            \"classroomId\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Find By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/school/student/343420bd-837f-4d04-a7a8-650c5af80940",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"school",
+								"student",
+								"343420bd-837f-4d04-a7a8-650c5af80940"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Find By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/school/student/343420bd-837f-4d04-a7a8-650c5af80940",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"school",
+										"student",
+										"343420bd-837f-4d04-a7a8-650c5af80940"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Feb 2024 00:01:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"343420bd-837f-4d04-a7a8-650c5af80940\",\n        \"createdBy\": \"SYSTEM\",\n        \"lastModifiedBy\": null,\n        \"createdDate\": \"2024-02-24 11:33:34\",\n        \"lastModifiedDate\": null,\n        \"name\": \"Student A\",\n        \"status\": \"A\",\n        \"classroomId\": \"31b2b389-16fe-46f5-928d-62f50f3a0a13\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ATTENDANCE-API",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"createdBy\": \"SYSTEM\",\n    \"createdDate\": \"2024-02-24 11:33:34\",\n    \"lastModifiedBy\": null,\n    \"lastModifiedDate\": null,\n    \"attendance\": \"LEAVE\",\n    \"studentId\": \"49b6d7b7-1f3e-4e3a-bdfc-039159f32bc5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/attendance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"attendance"
+							]
+						},
+						"description": "| **Param** | **Value** |\n| --- | --- |\n| attendance | ABSENT  <br>LEAVE  <br>SICK  <br>UNKNOW |"
+					},
+					"response": [
+						{
+							"name": "200 - Insert",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"createdBy\": \"SYSTEM\",\n    \"createdDate\": \"2024-02-24 11:33:34\",\n    \"lastModifiedBy\": null,\n    \"lastModifiedDate\": null,\n    \"attendance\": \"LEAVE\",\n    \"studentId\": \"49b6d7b7-1f3e-4e3a-bdfc-039159f32bc5\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/attendance",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"attendance"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Feb 2024 00:01:56 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"7bd01784-19dc-4d9e-8239-cf87e7c1c55a\",\n        \"createdBy\": \"SYSTEM\",\n        \"lastModifiedBy\": null,\n        \"createdDate\": \"2024-02-24 11:33:34\",\n        \"lastModifiedDate\": null,\n        \"studentId\": \"49b6d7b7-1f3e-4e3a-bdfc-039159f32bc5\",\n        \"attendance\": \"LEAVE\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/attendance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"attendance"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Find All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/attendance",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"attendance"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Feb 2024 00:02:01 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"e811c63b-b357-4fd8-b0ce-276932179462\",\n            \"createdBy\": \"SYSTEM\",\n            \"lastModifiedBy\": null,\n            \"createdDate\": \"2024-02-24 11:33:34\",\n            \"lastModifiedDate\": null,\n            \"studentId\": \"49b6d7b7-1f3e-4e3a-bdfc-039159f32bc5\",\n            \"attendance\": \"LEAVE\"\n        },\n        {\n            \"id\": \"7bd01784-19dc-4d9e-8239-cf87e7c1c55a\",\n            \"createdBy\": \"SYSTEM\",\n            \"lastModifiedBy\": null,\n            \"createdDate\": \"2024-02-24 11:33:34\",\n            \"lastModifiedDate\": null,\n            \"studentId\": \"49b6d7b7-1f3e-4e3a-bdfc-039159f32bc5\",\n            \"attendance\": \"LEAVE\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Find By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/attendance/e811c63b-b357-4fd8-b0ce-276932179462",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"attendance",
+								"e811c63b-b357-4fd8-b0ce-276932179462"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 - Find By Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/attendance/e811c63b-b357-4fd8-b0ce-276932179462",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"attendance",
+										"e811c63b-b357-4fd8-b0ce-276932179462"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "transfer-encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Feb 2024 00:02:32 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"e811c63b-b357-4fd8-b0ce-276932179462\",\n        \"createdBy\": \"SYSTEM\",\n        \"lastModifiedBy\": null,\n        \"createdDate\": \"2024-02-24 11:33:34\",\n        \"lastModifiedDate\": null,\n        \"studentId\": \"49b6d7b7-1f3e-4e3a-bdfc-039159f32bc5\",\n        \"attendance\": \"LEAVE\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
