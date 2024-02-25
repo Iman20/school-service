@@ -2,6 +2,13 @@
 
 School service dirancang menggunakan arsitektur microservice yang terdiri dari service School, Attendance, Gateway, dan Registry. Arsitektur microservice ini didukung dengan penggunaan Spring cload, Eureka Service Discovery dan Api Gateway. Penulisan pada program juga sudah menerapkan konsep clean-architecture.
 
+<p align="center">
+  <img src="https://github.com/Iman20/school-service/blob/main/assets/diagram-architecture.png" />
+     <p align="center">
+      <i>Diagram Arsitektur</i>
+   </p>
+</p>
+
 Pada sistem ini, terdapat empat feature utama diantaranya :
 1. Tambah master school
 2. Tambah master classroom
@@ -9,6 +16,20 @@ Pada sistem ini, terdapat empat feature utama diantaranya :
 4. Absensi siswa  
 
 Dalam perancangan sistem ini, terdapat dua buah database yaitu database school dan attendance. 
+
+<p align="center">
+  <img src="https://github.com/Iman20/school-service/blob/main/assets/database-school.png" />
+     <p align="center">
+      <i>Database School</i>
+   </p>
+</p>
+
+<p align="center">
+  <img src="https://github.com/Iman20/school-service/blob/main/assets/database-school.png" />
+     <p align="center">
+      <i>Database Attendance</i>
+   </p>
+</p>
 
 Sebelum memulai, terdapat beberapa tool yang perlu disiapkan untuk menjalankan service ini :
 1. IDE (Intellij, etc)
@@ -35,6 +56,15 @@ Sebelum memulai, terdapat beberapa tool yang perlu disiapkan untuk menjalankan s
 7. Service school akan berjalan pada `http://localhost:8080/school`.
 8. Service attendance akan berjalan pada `http://localhost:8080/attendance`.
 9. Service registri akan berjalan pada `http://localhost:8761`.
+
+<p align="center">
+  <img src="https://github.com/Iman20/school-service/blob/main/assets/service-registry.png" />
+     <p align="center">
+      <i>Eureka Discovery</i>
+   </p>
+</p>
+
 10. Import collection postman `SCHOOL-SERVICE.postman_collection.json` 
 11. Sistem absensi bisa berjalan setelah master data ditambahkan secara berurutan school -> classroom -> student -> attendance.
 12. Testing bisa dilakukan sesuai dengan dokument postman yang tersedia.
+
