@@ -64,7 +64,7 @@ Sebelum memulai, terdapat beberapa tool yang perlu disiapkan untuk menjalankan s
    </p>
 </p>
 
-10. Import collection postman `SCHOOL-SERVICE.postman_collection.json`
+10. Import collection postman `/aseets/SCHOOL-SERVICE.postman_collection.json`
 
 <p align="center">
   <img src="https://github.com/Iman20/school-service/blob/main/assets/document-postman.png" />
