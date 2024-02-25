@@ -25,7 +25,7 @@ Dalam perancangan sistem ini, terdapat dua buah database yaitu database school d
 </p>
 
 <p align="center">
-  <img src="https://github.com/Iman20/school-service/blob/main/assets/database-school.png" />
+  <img src="https://github.com/Iman20/school-service/blob/main/assets/database-attendance.png" />
      <p align="center">
       <i>Database Attendance</i>
    </p>
