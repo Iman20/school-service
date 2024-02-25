@@ -64,7 +64,15 @@ Sebelum memulai, terdapat beberapa tool yang perlu disiapkan untuk menjalankan s
    </p>
 </p>
 
-10. Import collection postman `SCHOOL-SERVICE.postman_collection.json` 
-11. Sistem absensi bisa berjalan setelah master data ditambahkan secara berurutan school -> classroom -> student -> attendance.
-12. Testing bisa dilakukan sesuai dengan dokument postman yang tersedia.
+10. Import collection postman `SCHOOL-SERVICE.postman_collection.json`
+
+<p align="center">
+  <img src="https://github.com/Iman20/school-service/blob/main/assets/document-postman.png" />
+     <p align="center">
+      <i>Document Postman-API</i>
+   </p>
+</p>
+
+12. Sistem absensi bisa berjalan setelah master data ditambahkan secara berurutan school -> classroom -> student -> attendance.
+13. Testing bisa dilakukan sesuai dengan dokumen postman yang tersedia.
 
